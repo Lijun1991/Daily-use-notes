@@ -1,0 +1,126 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    c_notes.txt                                        :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: lwang <lwang@student.42.us.org>            +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2017/06/15 15:40:30 by lwang             #+#    #+#              #
+#    Updated: 2017/06/15 15:40:32 by lwang            ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+very useful daily commands:
+
+//generate index file for easy check everything
+ctags **/*.[ch]
+ctags *.c libft/*.c
+control + }  //go to cursor pointed func
+control + t  //go back to previous func
+
+
+//for display undefined symbol
+nm -u *.o | grep U 
+
+//find all position used certain function
+grep function_name *.c
+
+//terminal tip
+cd ~/Download/...
+control + a   //go to first letter of the text
+control + e   //go to very end of the text
+arrow key up  //search previous command
+arrow key down //search previous command
+rm -rf    //delete file/directory
+cp file.c .  //copy file to current directory
+cp -R file .  //copy directory to currnt directory
+
+//check c leak
+volgrind file_name
+leak file_name
+
+//git commands
+git remote -v   //check current git repo
+git status
+.gitignore
+git commit -am "define your committment"
+
+//sublime text manage
+shift + tab     //between output and func_name for norm
+shift + tab     //when mutiple line selected can move together to left
+tab             //when multple line selected can move together to right
+
+
+//debugging c
+lldb ./a.out
+lldb -- ./a.out arg1 arg2 ..
+r  // run
+b func_name //set breakpoint at certain function
+n //next
+p variable //print var value
+s  //step in func inside the func
+bt // back track
+f2 // chose frame 2
+exit  //exit lldb
+
+//vim commands
+vim file_name.[c][txt][anything] //create a file
+fn + f1 or :stdheader //create header
+i  //insert mode
+esc //quit insert mode
+:w  //save file
+:q  //quit file
+:!q!  //force to quit
+:set nbr 
+:set mouse=a
+:syntax on
+:set ruler
+:set colorcolum=80 //for norm popurse
+:set srolloff=3   //for ruler don't disappear
+vim ~/.vimrc   //vim settings
+
+//operation
+command + shift + 4  //mac screen shot save image to desktop
+
+//shell setting
+vim ~/.zshrc    //zsh shell settings
+
+//printf
+printf(" -+0%d", 6);
+printf(" -+*%d", 10);
+printf("%sSpdD")
+printf("%idouxX")
+ft_fprintf(2, "%s", str); //send str to standard err
+
+//create author file
+echo lwang >author
+cat -e author
+lwang$
+
+//check if err reasult go to standart err or not, for correction popurse
+
+//data structue
+array/double array/tripple array
+linked list
+stack
+graph
+queue
+tree
+
+//algarithm
+mergesort
+...
+
+//special function
+fork
+wait
+sleep
+
+
+//c libary
+<stdio.h>
+...
+
+
+//web
+client/server
