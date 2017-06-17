@@ -36,7 +36,7 @@ cp file.c .  //copy file to current directory
 cp -R file .  //copy directory to currnt directory
 
 //check c leak
-volgrind file_name
+valgrind file_name
 leak file_name
 
 //git commands
@@ -87,17 +87,19 @@ vim ~/.zshrc    //zsh shell settings
 
 //printf
 printf(" -+0%d", 6);
-printf(" -+*%d", 10);
+printf(" -*%d", 10)  //very useful for ls project(-l)
 printf("%sSpdD")
 printf("%idouxX")
 ft_fprintf(2, "%s", str); //send str to standard err
+sprintf(buf, format, ...) //write format(which contains %s) to buf(char *str)
 
 //create author file
-echo lwang >author
+echo lwang 1> author
 cat -e author
 lwang$
 
 //check if err reasult go to standart err or not, for correction popurse
+./a.out 2> /dev/null   //there should have nothing displayed
 
 //data structue
 array/double array/tripple array
@@ -108,6 +110,9 @@ queue
 tree
 
 //algarithm
+voice recgnizition(Sphinx)
+machion learning
+speech to voice(Sam)
 mergesort
 ...
 
@@ -119,8 +124,31 @@ sleep
 
 //c libary
 <stdio.h>
+<pthread.h>
 ...
-
 
 //web
 client/server
+
+//very nice books 
+Lunix Programming Interface
+Cracking the coding interview
+...
+
+
+//very nice website resources
+GeeksforGeeks
+Stack Overflow
+BetterWorldBooks.com //better than Amazon for used books
+...
+
+//Q&A
+Q: why there is so many different languages? So hard to learn them, wish one langauage can go everything!
+A: It's because people want to have one language to solve everything, that's why there is so many differnt languages.
+
+Q: I feel like I don't know anything, what should I do?
+A: open every possible file you have acess to on you MAC, take advantage of it, read books, you don't anything doesn't matter, you eager to study that matters. Go find out the answer of the questions you have.
+
+Q: C is too hard to learn, why we don't learn python or something else?
+A: Google assembly language.
+
