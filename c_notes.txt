@@ -84,6 +84,8 @@ command + shift + 4  //mac screen shot save image to desktop
 
 //shell setting
 vim ~/.zshrc    //zsh shell settings
+echo $SHELL   //what shell you are currently using(env)
+
 
 //printf
 printf(" -+0%d", 6);
