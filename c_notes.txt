@@ -144,6 +144,27 @@ Stack Overflow
 BetterWorldBooks.com //better than Amazon for used books
 ...
 
+
+//on mac terminal
+python --version
+
+install homebrew 
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+Or without you as admin. Use the code below to automate the installation of brew using the goinfre directory. More information about brew here https://brew.sh/
+
+``` if [ ! -e '$HOME/goinfre' ] ; then
+    mkdir /goinfre/$(whoami)
+fi
+export PATH="$HOME"/goinfre/brew/bin:"$PATH"
+if [ ! -d '$HOME/goinfre/brew/bin' ] ; then
+    git clone https://github.com/Homebrew/homebrew.git ~/goinfre/brew
+    brew update
+fi ```
+
+brew --version
+
+
 //Q&A
 Q: why there is so many different languages? So hard to learn them, wish one langauage can go everything!
 A: It's because people want to have one language to solve everything, that's why there is so many differnt languages.
