@@ -36,8 +36,12 @@ cp file.c .  //copy file to current directory
 cp -R file .  //copy directory to currnt directory
 
 //check c leak
-valgrind file_name
+valgrind ./a.out
+valgrind --leak-check=full ./a.out  // check heap memory leak
+valgrind --track-origins=yes ./a.out  //Conditional jump or move depends on uninitialised value(s)
+
 leak file_name
+
 
 //git commands
 git remote -v   //check current git repo
