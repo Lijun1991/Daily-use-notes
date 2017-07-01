@@ -1,0 +1,60 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    cpp_notes.txt                                      :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: lwang <marvin@42.fr>                       +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2017/06/30 20:52:43 by lwang             #+#    #+#              #
+#    Updated: 2017/06/30 20:52:45 by lwang            ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+C++ is a statically typed, compiled, general-purpose, case-sensitive, free-form programming language that supports procedural, object-oriented, and generic programming.
+
+Object-Oriented Programming
+Encapsulation
+Data hiding
+Inheritance
+Polymorphism
+
+The files you create with your editor are called source files and for C++ they typically are named with the extension .cpp, .cp, or .c.
+
+Object − Objects have Properties and Behaviors. Example: A dog has Properties - color, name, breed as well as Behaviors - wagging, barking, eating. An object is an instance of a class.
+
+Class − A class can be defined as a template/blueprint that describes the behaviors/states that object of its type support.
+
+Methods − A method is basically a behavior. A class can contain many methods. It is in methods where the logics are written, data is manipulated and all the actions are executed.
+
+Instance Variables − Each object has its unique set of instance variables. An object's state is created by the values assigned to these instance variables.
+
+
+using namespace std
+Tells the compiler to use the std namespace. Namespaces are a relatively recent addition to C++.
+
+//compile use g++ instead of gcc
+g++ test.cpp
+./a.out
+
+cout << "Hello World"; // prints Hello World
+
+x = y; y = y+1; add(x, y);
+
+C++ is a case-sensitive programming language. Thus, Manpower and manpower are two different identifiers in C++.
+
+//variables
+mohd       zara    abc   move_name  a_123
+myname50   _temp   j     a23b9      retVal
+
+Trigraphs
+A few characters have an alternative representation, called a trigraph sequence
+??=	 #
+??/	 \
+??'	 ^
+??(	 [
+??)	 ]
+??!	 |
+??<	 {
+??>	 }
+??-	 ~
+
