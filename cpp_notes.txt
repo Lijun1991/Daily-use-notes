@@ -58,3 +58,105 @@ A few characters have an alternative representation, called a trigraph sequence
 ??>	 }
 ??-	 ~
 
+//C++ Data Types    https://www.tutorialspoint.com/cplusplus/cpp_data_types.htm
+endl,   which inserts a new-line character after every line 
+<<   operator is being used to pass multiple values out to the screen
+
+typedef int feet;
+
+Enumerated Types: ???
+enum color { red, green, blue } c;
+c = blue;
+
+enum color { red, green=5, blue };
+
+
+???//Variable Definition in C++
+int    i, j, k;
+extern int d = 3, f = 5;    // declaration of d and f. ???
+int d = 3, f = 5;           // definition and initializing d and f. 
+
+For definition without an initializer: variables with static storage duration are implicitly initialized with NULL (all bytes have the value 0); the initial value of all other variables is undefined. ???
+
+When a local variable is defined, it is not initialized by the system, you must initialize it yourself. Global variables are initialized automatically by the system when you define them as follows:
+int	    0
+char	'\0'
+float	0
+double	0
+pointer	NULL
+
+
+Constants refer to fixed values that the program may not alter and they are called literals.
+
+Integer literals
+212         // Legal
+215u        // Legal
+0xFeeL      // Legal
+078         // Illegal: 8 is not an octal digit
+032UU       // Illegal: cannot repeat a suffix
+85         // decimal
+0213       // octal
+0x4b       // hexadecimal
+30         // int
+30u        // unsigned int
+30l        // long
+30ul       // unsigned long
+
+Boolean literals
+true/false
+
+Character literals
+\\	\ character
+\'	' character
+\"	" character
+\?	? character
+\a	Alert or bell
+\b	Backspace
+\f	Form feed
+\n	Newline
+\r	Carriage return
+\t	Horizontal tab
+\v	Vertical tab
+\ooo	Octal number of one to three digits
+\xhh . . .	Hexadecimal number of one or more digits
+
+String literals
+"hello, dear" = "hello, " "d" "ear" = "hello, \
+dear"
+
+Defining Constants
+There are two simple ways in C++ to define constants:
+Using #define preprocessor.
+Using const keyword.
+
+#define LENGTH 10   
+#define WIDTH  5
+#define NEWLINE '\n' 
+=
+const int  LENGTH = 10;
+const int  WIDTH  = 5;
+const char NEWLINE = '\n';
+
+Type Qualifiers in C++
+const
+volatile
+restrict
+
+Storage Classes in C++
+auto
+
+register
+
+static
+
+extern
+
+mutable
+
+
+*Bitwise Operators
+*Misc Operators
+
+...
+
+
