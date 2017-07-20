@@ -10,6 +10,13 @@
 #                                                                              #
 # **************************************************************************** #
 
+//initial list
+className::class_funciton(int const n) : _n(n){
+	...
+};  // _n is private inside of className
+
+
+
 C++ is a statically typed, compiled, general-purpose, case-sensitive, free-form programming language that supports procedural, object-oriented, and generic programming.
 
 Object-Oriented Programming
@@ -158,5 +165,29 @@ mutable
 *Misc Operators
 
 ...
+
+this
+Operators overloading in C++
+Polymorphism in C++
+C++ Exception Handling
+inline
+tmplate
+
+Dynamic Memory Allocation for Arrays
+int ROW = 2;
+int COL = 3;
+double **pvalue  = new double* [ROW]; // Allocate memory for rows
+
+// Now allocate memory for columns
+for(int i = 0; i < COL; i++) {
+    pvalue[i] = new double[COL];
+}
+
+for(int i = 0; i < ROW; i++) {
+   delete[] pvalue[i];
+}
+delete [] pvalue; 
+
+initialization list
 
 
