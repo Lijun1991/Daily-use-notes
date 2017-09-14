@@ -1,0 +1,7 @@
+1. how to start up your mac with in Recovery Mode?
+   Command + R while turn on mac
+
+   Use Disk Utility to erase a disk
+   Reinstall OS X
+   Then you can set up your brand new Mac
+
