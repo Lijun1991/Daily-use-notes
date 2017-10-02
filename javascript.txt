@@ -10,3 +10,44 @@ function expression:
 var capitalize = function(str) {
     return str.charAt(0).toUpperCase + str.slice(1);
 }
+
+//initialize an empty array:
+var friends = [];
+var friends = new Array()
+
+friends.length
+
+var name = "lwang";
+name.length = 5;
+--> name[4] == 'g';
+
+//add sth to the end of the array --> push
+var num = [1, 2, 3, 3];
+num.push(6);
+
+//remove last element of an array --> pop
+num.pop();
+
+//add the front of an array --> unshift
+num.unshift("0");
+
+//remove the front of an array --> shift
+num.shift();
+
+//take an arg(str/array) to find the index of the item --> indexOf
+num.indexOf("3"); //2
+num.indexOf("100"); //-1
+
+//copy parts of an array --> slice
+starting index, end index(exclusive)
+var copy_partOf_num = num.slice(1, 4); // [2, 3, 3]
+var copy_entire_num = num.slice();
+
+
+
+
+
+
+
+
+
