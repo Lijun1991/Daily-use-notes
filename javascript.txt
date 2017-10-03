@@ -43,6 +43,63 @@ starting index, end index(exclusive)
 var copy_partOf_num = num.slice(1, 4); // [2, 3, 3]
 var copy_entire_num = num.slice();
 
+//iterating over an array
+arr.forEach(someFunction_one_each_element)
+call the funcion on each item of the array
+
+num.forEach(function(number)){
+    //number is placeholer for each element
+    console.log(number);
+}
+
+
+function printNum(number){
+    console.log(number);
+}
+
+num.forEach(printNum, index, arrayOriginal);
+
+
+///object
+var person = {
+    name: "David",
+    age: "21",
+    city: "Los Angeles",
+    1blog: "hahah",
+    fav color: "red"
+}
+//2 way to access 
+console.log(person["name"]);
+console.log(person.name);
+
+console.log(person["1blog"]); //can't use dot notiation cause start with number
+console.log(person["fav color"]); //can't use dot notition cause there is space
+
+var str = "name";
+person.str  //looking for str int person
+person[str]  //David
+
+person["age"] += 1;
+person.city = "London";
+
+//make empty object then add to it
+var person = {};
+person.name = "Travis";
+person.age = 21;
+person.city = "LA";
+
+//all at once
+var person = {
+    name: "David",
+    age: "21",
+    city: "Los Angeles",
+}
+
+//another way
+var person = new object();
+person.name = "Travis";
+person.age = 21;
+person.city = "LA";
 
 
 
