@@ -1,0 +1,2 @@
+PostgreSQL, also known as postgres, 
+is a popular database management system that is used to handle the data of many websites and applications.
