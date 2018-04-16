@@ -1,26 +1,26 @@
 # Resources for Web Development
 
-General Resources
-Codecademy: A place to learn and practice web development concepts and languages.
-Egghead: A place to learn new web development concepts and languages, both for free and paid.
-Codewars: A place to challenge yourself and hone your coding skills. See if you can find any fellow ZTM students on there and team up!
-Code School: A number of web development tutorials, some available for free. A great place to learn coding.
-freeCodeCamp.org: A free site for learning web development. Optionally, you can pledge to donate money to charities while you learn, giving incentive to keep working. In particular, this site features a number of JavaScript algorithms for practice and preparation for technical job interviews.
-StackOverflow: A massive resource of questions and answers having to do with coding. If you have a question regarding web development or coding in general, chances are it has already been answered on StackOverflow.
-Udacity: A website for learning different concepts of computer science.
-CSS-Tricks: One of the best sites to learn CSS and responsive design.
-CodePen: A development environement for front-end designers and developers, to showcasing user-created HTML, CSS and JavaScript code snippets.
-MDN Web Docs: A resource for developers, maintained by the community of developers and technical writers and hosting many documents on a wide variety of subjects, such as: HTML, CSS, HTTP, JavaScript, Web APIs, Web components, Graphics, Audio, video and multimedia, MathML.
+**General Resources**
+1.Codecademy: A place to learn and practice web development concepts and languages.
+2.Egghead: A place to learn new web development concepts and languages, both for free and paid.
+3.Codewars: A place to challenge yourself and hone your coding skills. See if you can find any fellow ZTM students on there and team up!
+4.Code School: A number of web development tutorials, some available for free. A great place to learn coding.
+5.freeCodeCamp.org: A free site for learning web development. Optionally, you can pledge to donate money to charities while you learn, giving incentive to keep working. In particular, this site features a number of JavaScript algorithms for practice and preparation for technical job interviews.
+6.StackOverflow: A massive resource of questions and answers having to do with coding. If you have a question regarding web development or coding in general, chances are it has already been answered on StackOverflow.
+7.Udacity: A website for learning different concepts of computer science.
+8.CSS-Tricks: One of the best sites to learn CSS and responsive design.
+9.CodePen: A development environement for front-end designers and developers, to showcasing user-created HTML, CSS and JavaScript code snippets.
+10.MDN Web Docs: A resource for developers, maintained by the community of developers and technical writers and hosting many documents on a wide variety of subjects, such as: HTML, CSS, HTTP, JavaScript, Web APIs, Web components, Graphics, Audio, video and multimedia, MathML.
 
-Resources for Web Design
-General Web Design
-Material Design: A collection of guidelines, resources, and tools for web design, all available for free. Created by Google.
-CSS Zen Garden: A demonstration of what can be accomplished through CSS-based design. Style sheets contributed by graphic designers from around the world are used to change the visual presentation of a single HTML file, producing hundreds of different designs.
-Images & Video
-Coverr: Free stock videos to add to your websites.
-Videvo: Free stock videos.
-Pixabay: Free stock videos.
-AllTheFreeStock: A central place to search for free stock photos and videos.
+**Resources for Web Design**
+**General Web Design**
+1.Material Design: A collection of guidelines, resources, and tools for web design, all available for free. Created by Google.
+2.CSS Zen Garden: A demonstration of what can be accomplished through CSS-based design. Style sheets contributed by graphic designers from around the world are used to change the visual presentation of a single HTML file, producing hundreds of different designs.
+3.Images & Video
+4.Coverr: Free stock videos to add to your websites.
+5.Videvo: Free stock videos.
+6.Pixabay: Free stock videos.
+7.AllTheFreeStock: A central place to search for free stock photos and videos.
 Unsplash: Free stock photos, all in JPEG format.
 Pexels: A source of free stock photos and videos.
 Gratisography: Another source of free stock photos.
