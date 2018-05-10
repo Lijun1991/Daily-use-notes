@@ -5,3 +5,24 @@
    Reinstall OS X
    Then you can set up your brand new Mac
 
+Linux Tutorial:
+
+2. Linux commands:
+    grep keyword file  --> return all lines contain keyword in the file
+    diff file1 file2   --> return all diff lines between files
+    passed    --> what's currently password
+    info ls     --> like man ls
+    command > file    --> save command result to a file 
+    command >> file   --> save command result at the bottom of the file
+
+3. Verify Files you downloaded, make sure you downloaded the valid version, no fake stuff
+    shasum -a 1 file(path to file)  --> generate hash for the file, then compare to the hash online
+
+4. Compress and decompress file
+    Single file:
+        gzip file    --> compress file
+        gunzip file   -> decompress file
+    Multiple file:
+        tar cvf file.tar file1 file2   --->  c --> create something, v --> show info in terminal when complete, f --> files 
+        tar xvf file.tar
+ 

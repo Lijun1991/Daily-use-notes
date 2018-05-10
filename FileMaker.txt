@@ -1,0 +1,41 @@
+Problems statement (address the painpoint you identified from your client)
+    Design: a feature/app
+    For: who are you desgining for
+    To : what they would do with the app
+    So : result
+
+Databese Application --> called FileMaker
+
+Spreadsheet, data integrity issue, same data multiple places
+
+Table
+Blueprint for realtionships
+    ERD --> entity(table) realtionship diagram --> one to one, one to multiple, multiple to multiple
+    rows --> records
+    coloums --> fields --> Primary Key fields/Foriegn Key fields --> link tables together
+
+Relational Databese Design:
+our rules is to get one to many, if many to many change it to one to many
+    EX: Customers(pk)  Invoices(pk, fk-Customers)  Invoice-line-iterms(fk-Products, fk-Invoices)  Products(pk)
+        actors(pk)  roles(fk-actors fk-movies)  movies(pk)
+    
+    one --> get Primary Key fields (unicly identify a record)
+    many/multiple --> get Foriegn Key fields
+
+    to avoid redundency, BOWRROW fields from other table, related table 
+    when link child to parent will give it a list of valid child value --> pop up list
+    also when you change it, your parent would change as well.
+    borrow data from Parent as well as your child
+    Portal, you will only use a portal as a layout in Parent and get data form child.
+    allow creation of records in this talbe via this realtionship --> edit data realtionship to allow user to add value to portal to create realted value
+    
+    query types of realtionships that can be used for specialized purpose.
+    realtionship graph can create more than one table occurrence per table in your database, can have it's own properties, seperate from the original one,
+    table plus --> name as where this talbe is going to be used + the name of the talbe this one base on + what feature you want to unicly.
+    two match fileds in one realtionship --> query the data you need to put on your portal
+
+
+FileMaker Server key: 31X7M-K2T22-384KK-T145V-278NM-J7NXJ-X31N7
+
+    
+
