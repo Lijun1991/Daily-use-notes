@@ -1,41 +1,154 @@
-Problems statement (address the painpoint you identified from your client)
+1. Problems statement (address the painpoint you identified from your client)
     Design: a feature/app
     For: who are you desgining for
     To : what they would do with the app
     So : result
 
-Databese Application --> called FileMaker
+2. Databese Application --> called FileMaker
 
-Spreadsheet, data integrity issue, same data multiple places
+3. Spreadsheet, data integrity issue, same data multiple places
+4. FileMaker Server key: 31X7M-K2T22-384KK-T145V-278NM-J7NXJ-X31N7
 
-Table
-Blueprint for realtionships
-    ERD --> entity(table) realtionship diagram --> one to one, one to multiple, multiple to multiple
-    rows --> records
-    coloums --> fields --> Primary Key fields/Foriegn Key fields --> link tables together
+5. Tables
+    Blueprint for realtionships
+        ERD --> entity(table) realtionship diagram --> one to one, one to multiple, multiple to multiple
+        rows --> records
+        coloums --> fields --> Primary Key fields/Foriegn Key fields --> link tables together
 
-Relational Databese Design:
-our rules is to get one to many, if many to many change it to one to many
-    EX: Customers(pk)  Invoices(pk, fk-Customers)  Invoice-line-iterms(fk-Products, fk-Invoices)  Products(pk)
-        actors(pk)  roles(fk-actors fk-movies)  movies(pk)
-    
-    one --> get Primary Key fields (unicly identify a record)
-    many/multiple --> get Foriegn Key fields
+    Relational Databese Design: modling realtionships
+    our rules is to get one to many, if many to many change it to one to many
+        EX: Customers(pk)  Invoices(pk, fk-Customers)  Invoice-line-iterms(fk-Products, fk-Invoices)  Products(pk)
+            actors(pk)  roles(fk-actors fk-movies)  movies(pk)
+        
+        one --> get Primary Key fields (unicly identify a record)
+        many/multiple --> get Foriegn Key fields
 
-    to avoid redundency, BOWRROW fields from other table, related table 
-    when link child to parent will give it a list of valid child value --> pop up list
-    also when you change it, your parent would change as well.
-    borrow data from Parent as well as your child
-    Portal, you will only use a portal as a layout in Parent and get data form child.
-    allow creation of records in this talbe via this realtionship --> edit data realtionship to allow user to add value to portal to create realted value
-    
-    query types of realtionships that can be used for specialized purpose.
-    realtionship graph can create more than one table occurrence per table in your database, can have it's own properties, seperate from the original one,
-    table plus --> name as where this talbe is going to be used + the name of the talbe this one base on + what feature you want to unicly.
-    two match fileds in one realtionship --> query the data you need to put on your portal
+        to avoid redundency, BOWRROW fields from other table, related table 
+        when link child to parent will give it a list of valid child value --> pop up list
+        also when you change it, your parent would change as well.
+        borrow data from Parent as well as your child
+        Portal, you will only use a portal as a layout in Parent and get data form child.
+        allow creation of records in this talbe via this realtionship --> edit data realtionship to allow user to add value to portal to create realted value
+        
+        query types of realtionships that can be used for specialized purpose.
+        realtionship graph can create more than one table occurrence per table in your database, can have it's own properties, seperate from the original one,
+        table plus --> name as where this talbe is going to be used + the name of the talbe this one base on + what feature you want to unicly.
+        two match fileds in one realtionship --> query the data you need to put on your portal
+        EX: All the orders realted to the Customers 
+            All the orders realted to the Customers has been shipped
+            All the orders realted to the Customers are going to ship in the feature
+
+        OR using portal filter to change the portal's perspective to match criteria
+        Lol, copy the data occurrence and filter it, create date range, Lol .......
+
+6. Fields
+    Talk to your Customers to find out what fields are meaningful for their business
+    Auto entere:
+        type, create by departmet name, created by account name, 
+        Data: auto entered value, can be edit by your Customers
+        ***Prohibit modification ***
+
+    validation:
+    data consistency, reliable --> , not empty, error massage
+
+    storge:
+    container field --> movies, pictures, files. --> drag and drop, copy, paste --> 4G limit each
+    store cantinar data externally, won't impact the database itself.
+
+7. Records:
+    new window, duplite
+
+8. **Importing data, Spreadsheet, filemaker file, comma-seperated values
+    change, add, what record not import, pk changes
+9. Export data
+    find mode --> get data --> export to Spreadsheet or file
+
+10. Layout:
+    Each layout built base on certain table 
+    layout mode -> pencil(layout setup) -> views -> check for layout you want user to see
+    part setup
+    inspector --> command i
+    manage layout --> command shitf L  --> mangage what show out to your users when they browse or create new layout
+    rulers, points or inches
+    color --> select theme colors
+
+11. **Find Data/Sort Data
+
+12. Value List --> custome or alll
+13. Print/Save as PDF or excel
+14. Report, subsummary fileds, add charts
+
+15. Calculations, --> date time hide filed, recode refill, getfunctions(users, data) --> get commitions!!!
+
+16 ****Scripts --> Print Button setup
+    perform find mode --> print out all status is send 
+    enter find mode --> let the user to enter their own critier
+    EX1: 
+        Customer Welcome Letter Scripts (Print out letters )
+        1. Navigate to cusomer welcome letter layout
+        2. Set page setup to print only current record
+        3. Print
+        4. Navigate back to original layout
+
+        enter find mode
+        perform find --> set find criteria to print 
+        go to layout
+        print setup
+        print
+        show custom dialog --> Get ( FoundCount ) & " letters have been printed"
+
+    EX2:
+        create New customer window
+        1. open new window (it's just gonna inherit the layout that you are on already)
+        2. Navigate to new "add customer" layout
+        3. fill in new records, create new record
+        4. click on ADD to save the record and close the window
+
+        new window --> card, add layout
+        new record/request
+        (button add to close window)
+
+    EX3: 
+        print dif letters to different status customers
+        If status=active 
+            go to layout 1
+        else status=inactive
+            go to layout 2
+        print match letter
+        
+    EX4: 
+        Quick finds
+        1. go to find mode
+        2. send parameter, a, b, c, d, z
+        3. show find result
+
+        enter find mode --> pause:off
+        set Error Capture On
+        set field --> cusomer last name , get scriptParameter
+        Perform find
+        if Get(LastError) <> 0  
+            show custome Dialog --> warning; NO record show starts with Get(ScripParameter)
+            Show All Records
+        End If
+
+    send mail, can't send large set of emails or  SMTP server --> use Calculations ...
+
+17. Script Trigger -->  like js events, action plus Scripts
+    object-based:
+    1) check spelling before save:
+        onObjectSave --> check selection spelling, before save check spelling
+
+    2) Track the changes of customer names:
+        onObjectEnter
+            $$Existing : Customer full name
+        onObjectSave 
+            Commit Records/requests --> skip data validation, dialog off
+            Set Variable --> $$Current Customer full name
+            Go to Object --> Object name 'N' (name of the Note tab filed)
+            Set Field --> target filed Customer::Notes,
+                        Customers::Notes & ¶ & "Previous Contact was: "& $$Existing & "on " & Get(CurrentTimestamp)
+    layout-based ..?
+    file-based ..
 
 
-FileMaker Server key: 31X7M-K2T22-384KK-T145V-278NM-J7NXJ-X31N7
-
-    
 
