@@ -23,23 +23,21 @@
         one --> get Primary Key fields (unicly identify a record)
         many/multiple --> get Foriegn Key fields
 
-        to avoid redundency, BOWRROW fields from other table, related table 
+        to avoid redundency, BORROW fields from other table, related table 
         when link child to parent will give it a list of valid child value --> pop up list
         also when you change it, your parent would change as well.
         borrow data from Parent as well as your child
         Portal, you will only use a portal as a layout in Parent and get data form child.
         allow creation of records in this talbe via this realtionship --> edit data realtionship to allow user to add value to portal to create realted value
         
-        query types of realtionships that can be used for specialized purpose.
-        realtionship graph can create more than one table occurrence per table in your database, can have it's own properties, seperate from the original one,
-        table plus --> name as where this talbe is going to be used + the name of the talbe this one base on + what feature you want to unicly.
-        two match fileds in one realtionship --> query the data you need to put on your portal
         EX: All the orders realted to the Customers 
             All the orders realted to the Customers has been shipped
             All the orders realted to the Customers are going to ship in the feature
 
         OR using portal filter to change the portal's perspective to match criteria
         Lol, copy the data occurrence and filter it, create date range, Lol .......
+
+        global storage, 
 
 6. Fields
     Talk to your Customers to find out what fields are meaningful for their business
@@ -151,4 +149,45 @@
     file-based ..
 
 
+
+6/8/18 FileMaker Challenge
+
+
+ExecuteSQL (
+
+    "SELECT COUNT ( * )
+
+    FROM \"CyberCenter Sign-In\"
+
+    WHERE ifExited=0"
+
+; "" ; "" )
+
+
+ExecuteSQL("
+    SELECT COUNT(*)
+    FROM \"CyberCenter Sign-In\"
+    WHERE ifExited=0 AND \"Date\" = '" & Get(CurrentDate) & "'"
+; ""; "")
+
+
+ExecuteSQL("
+    SELECT COUNT(*)
+    FROM \"CyberCenter Waiting List\"
+    WHERE ifEmailSend=0 AND ifConfirmSignIn=0 AND \"Date\" = '" & Get(CurrentDate) & "'"
+; ""; "")
+
+
+hiroshi.x.usui@gmail.com
+kcheung331@gmail.com
+
+****total available space = total space - total taken space - g_waitingList Total
+
+"fmp://lijun:1234@10.114.1.8/team_husui_kcheung_lwang.fmp12?script=tableau&$_zipCode=" + [Zip Code]
+10.114.1.8
+
+
+List ( TicTacToe::box1; TicTacToe::box2; TicTacToe::box3; TicTacToe::box4; TicTacToe::box5; TicTacToe::box6; TicTacToe::box7; TicTacToe::box8; TicTacToe::box9 )
+
+Ceiling ( Random * 9 )
 
