@@ -11,9 +11,7 @@ var capitalize = function(str) {
     return str.charAt(0).toUpperCase + str.slice(1);
 }
 
-//initialize an empty array:
-var friends = [];
-var friends = new Array()
+
 
 friends.length
 
