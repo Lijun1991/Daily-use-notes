@@ -43,12 +43,6 @@ valgrind --track-origins=yes ./a.out  //Conditional jump or move depends on unin
 leak file_name
 
 
-//git commands
-git remote -v   //check current git repo
-git status
-.gitignore
-git commit -am "define your committment"
-
 //sublime text manage
 shift + tab     //between output and func_name for norm
 shift + tab     //when mutiple line selected can move together to left
